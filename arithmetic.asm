@@ -16,8 +16,8 @@ main:
 	move $s2 $v0
 
 	# (x - y / 2)
-	li $t0 2
-	div $s3 $s2 $t0
+	li $t0 1
+	sra $s3 $s2 $t0
 	sub $s4 $s1 $s3
 
 	# 32 * (x - y / 2) + 4
